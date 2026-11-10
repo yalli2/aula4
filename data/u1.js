@@ -1,0 +1,32 @@
+AULA.unit({
+  n: 1, title: 'Buenas noticias', ko: '좋은 소식 — 뉴스룸 만들기',
+  goal: '뉴스를 언급하고 논평하기, 뉴스 전달하기 — 반 전체가 하나의 언론사 편집부 되기',
+  can: ['과거 시제 종합', '수동태 (ser + 과거분사)', '비인칭 se / 3인칭 복수', '목적어 전치 (lo/la 중복)', '전달 동사'],
+  tags: ['tiempos del pasado', 'voz pasiva', 'impersonalidad', 'medios de comunicación', 'noticias', 'verbos de transmisión'],
+  vocab: [
+    { g: '언론 · Medios de comunicación', w: [['la prensa', '언론'], ['el periódico digital', '인터넷 신문'], ['el titular', '헤드라인'], ['el subtítulo', '부제'], ['la portada', '1면'], ['la sección', '섹션'], ['el/la corresponsal', '특파원'], ['la rueda de prensa', '기자 회견'], ['la agencia de noticias', '통신사'], ['la noticia falsa (bulo)', '가짜 뉴스'], ['la fuente', '출처'], ['la tirada', '발행 부수'], ['el telediario', 'TV 뉴스']] },
+    { g: '전달 동사 · Verbos de transmisión', w: [['afirmar', '단언하다'], ['declarar', '밝히다·진술하다'], ['manifestar', '표명하다'], ['anunciar', '발표하다'], ['asegurar', '장담하다'], ['negar', '부인하다'], ['reconocer', '인정하다'], ['explicar', '설명하다'], ['advertir', '경고하다'], ['confirmar', '확인하다'], ['desmentir', '반박하다·부인하다']] },
+    { g: '정치·역사 · Política e historia', w: [['las elecciones', '선거'], ['el/la presidente/-a', '대통령'], ['el parlamento', '의회'], ['aprobar una ley', '법을 통과시키다'], ['firmar un acuerdo', '협정에 서명하다'], ['la dictadura', '독재'], ['la democracia', '민주주의'], ['la independencia', '독립'], ['la constitución', '헌법'], ['el golpe de Estado', '쿠데타']] }
+  ],
+  gram: [
+    { h: '수동태: ser + 과거분사 (+ por)', p: '언론·역사 서술에 자주 쓰여요. 과거분사는 주어와 **성·수 일치**.', ex: [['El acuerdo fue firmado por los dos presidentes.', '협정은 두 대통령에 의해 서명되었다.'], ['Las obras serán inauguradas en mayo.', '작품들은 5월에 공개될 것이다.']] },
+    { h: '비인칭 표현', t: [['형태', '예'], ['se + 3인칭 (단·복수)', 'Se han detectado nuevos casos.'], ['3인칭 복수 (주어 불특정)', 'Dicen que va a subir la luz.'], ['수동태', 'Ha sido detenido un sospechoso.']] },
+    { h: '목적어를 앞에: 대명사 중복', p: '직접목적어를 문장 앞에 두면 **lo/la/los/las**를 반드시 반복해요.', ex: [['El premio lo ganó una científica argentina.', '그 상은 아르헨티나 과학자가 받았다.'], ['Esta noticia la publicaron ayer todos los diarios.', '이 뉴스는 어제 모든 신문이 실었다.']] },
+    { h: '과거 시제로 뉴스 쓰기', p: '**현재완료**: 오늘의 뉴스 (Ha ganado…) · **단순과거**: 끝난 사건 (Ayer ganó…) · **불완료과거**: 배경 (Llovía cuando…) · **과거완료**: 더 이전 (Había desaparecido hacía dos días)' }
+  ],
+  ex: [
+    { k: 'fill', t: '수동태 만들기', d: 'ser + 과거분사, 성·수 일치 주의', it: ['El puente [fue construido] en 1920. (construir, 단순과거)', 'La ley [fue aprobada] por el parlamento. (aprobar)', 'Los ladrones [fueron detenidos] ayer. (detener)', 'Las nuevas medidas [serán anunciadas] mañana. (anunciar, 미래)', 'El cuadro [ha sido robado] esta mañana. (robar, 현재완료)'] },
+    { k: 'fill', t: '능동태 → 수동태', it: ['La policía cerró la calle. → La calle [fue cerrada] por la policía.', 'Una niña encontró el perro. → El perro [fue encontrado] por una niña.', 'Picasso pintó el Guernica. → El Guernica [fue pintado] por Picasso.', 'Miles de personas vieron el partido. → El partido [fue visto] por miles de personas.'] },
+    { k: 'fill', t: '목적어 전치 + 대명사', it: ['El gol [lo] marcó el portero en el último minuto.', 'Esa película [la] dirigió una mujer chilena.', 'Los resultados [los] conoceremos el lunes.', 'Las entradas [las] vendieron en dos horas.'] },
+    { k: 'mc', t: '어떤 전달 동사?', audio: false, it: [['«No es verdad, yo no estuve allí» — dijo el ministro.', 'confirmó|*negó|anunció'], ['«Sí, nos equivocamos» — dijo la empresa.', '*reconoció|desmintió|advirtió'], ['«Mañana subirán los precios» — dijo el gobierno.', 'negó|*anunció|reconoció'], ['«Cuidado: puede haber inundaciones» — dijeron los expertos.', 'confirmaron|negaron|*advirtieron']] },
+    { k: 'fill', t: '과거 시제 선택 (뉴스)', it: ['Esta mañana un incendio {*ha destruido|destruía} un almacén en Toledo.', 'Cuando llegaron los bomberos, el fuego ya {*se había extendido|se extendió} por todo el edificio.', 'En ese momento no {*había|hubo} nadie dentro.', 'En 1969 el hombre {*llegó|llegaba} a la Luna.'] },
+    { k: 'tf', t: '읽기 — 좋은 뉴스', text: '**Una joven de 17 años crea un filtro que limpia el agua con cáscaras de plátano**\nEl invento fue presentado ayer en la Feria Nacional de Ciencia de Guadalajara (México). Según declaró la estudiante, Mariana Ruiz, la idea se le ocurrió cuando vio que en su pueblo se tiraban toneladas de cáscaras cada semana. El filtro, que ya ha sido probado en dos escuelas, elimina hasta el 80 % de los metales pesados. Los organizadores han anunciado que el proyecto representará a México en un concurso internacional.',
+      it: [['El invento fue presentado en Guadalajara.', true], ['La estudiante tiene veinte años.', false], ['El filtro todavía no se ha probado.', false], ['Elimina hasta el 80 % de los metales pesados.', true], ['El proyecto irá a un concurso internacional.', true]] },
+    { k: 'tf', t: '듣기 — 라디오 뉴스 속보', listen: 1, text: 'Última hora. Esta tarde ha sido rescatado un grupo de doce excursionistas que se habían perdido en la sierra de Gredos. Según han explicado los servicios de emergencia, el grupo había salido el sábado por la mañana, pero una fuerte niebla les impidió encontrar el camino de vuelta. Todos se encuentran en buen estado. El alcalde ha agradecido el trabajo de los voluntarios.',
+      it: [['Rescataron a doce excursionistas.', true], ['Se perdieron por culpa de la nieve.', false], ['Habían salido el domingo.', false], ['Están todos bien.', true], ['El alcalde criticó a los voluntarios.', false]] },
+    { k: 'match', t: '언론 어휘', it: [['el titular', '헤드라인'], ['la portada', '1면'], ['el/la corresponsal', '특파원'], ['la rueda de prensa', '기자 회견'], ['el bulo', '가짜 뉴스'], ['la fuente', '출처']] },
+    { k: 'order', t: '헤드라인 만들기', it: ['El nuevo museo será inaugurado en marzo.', 'Se han encontrado restos de una ciudad maya.', 'El premio lo ganó una científica argentina.', 'El presidente negó las acusaciones.'] },
+    { k: 'dict', t: '받아쓰기', it: ['El acuerdo fue firmado ayer.', 'Según fuentes oficiales, no hay heridos.', 'La noticia la dio un periódico local.'] },
+    { k: 'write', t: '좋은 뉴스 기사 쓰기', d: '학교·동네의 좋은 소식을 헤드라인 + 리드 + 본문(수동태, 비인칭 se, 전달 동사)으로 써 보세요.', model: 'Titular: Los alumnos del KCIS recogen 500 kilos de basura en la playa de Haeundae. El pasado sábado, la playa fue limpiada por más de ochenta estudiantes voluntarios. Según explicó la profesora organizadora, la actividad se había preparado durante dos meses. Se recogieron sobre todo plásticos y colillas. El ayuntamiento ha anunciado que repetirá la iniciativa cada trimestre.' }
+  ]
+});
